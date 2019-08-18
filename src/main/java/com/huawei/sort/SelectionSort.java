@@ -8,11 +8,6 @@ import org.junit.Test;
  * @Description: 选择排序，从最左边开始找到最小的数，并和左边第一个交换
  */
 public class SelectionSort {
-    @Test
-    public void demo1() {
-        int[] ints = {2, 4, 1, 8, 5};
-        selectionSort(ints);
-    }
 
     public static int[] selectionSort(int[] ints) {
         int temp = 0;
@@ -33,13 +28,6 @@ public class SelectionSort {
         ints[a] = ints[b];
         ints[b] = temp;
     }
-
-    @Test
-    public void demo2() {
-        String[] ints = {"ab","ac","dd","cd","cb"};
-        selectionSort2(ints);
-    }
-
     public static String[] selectionSort2(String[] ints) {
         int temp = 0;
         for (int out = 0; out < ints.length; out++) {

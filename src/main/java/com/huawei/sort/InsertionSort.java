@@ -8,12 +8,6 @@ import org.junit.Test;
  * @Description: 插入排序，左边已全部有序
  */
 public class InsertionSort {
-    @Test
-    public void demo1() {
-        int[] ints = {2, 4, 1, 8, 5, 7, 10, 9};
-        insertSort(ints);
-    }
-
     public static int[] insertSort(int[] ints) {
         int out;
         int in;
@@ -35,12 +29,6 @@ public class InsertionSort {
             ints[in] = temp;
         }
         return ints;
-    }
-
-    @Test
-    public void demo2() {
-        String[] ints = {"ab","ac","dd","cd","cb"};
-        insertSort2(ints);
     }
 
     public static String[] insertSort2(String[] ints) {

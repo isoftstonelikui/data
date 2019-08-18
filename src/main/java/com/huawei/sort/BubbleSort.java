@@ -10,12 +10,6 @@ import java.awt.image.ShortLookupTable;
  * @Description: 冒泡排序，从最左边开始一次和右边一个比较，如不符合要求就交换
  */
 public class BubbleSort {
-    @Test
-    public void demo1() {
-        int[] ints = {2, 4, 1, 8, 5};
-        bubbleSort(ints);
-    }
-
     public static int[] bubbleSort(int[] ints) {
 
         for (int out = ints.length - 1; out > 1; out--) {
@@ -32,12 +26,6 @@ public class BubbleSort {
         int temp = ints[a];
         ints[a] = ints[b];
         ints[b] = temp;
-    }
-
-    @Test
-    public void demo2() {
-        String[] ints = {"ab","ac","dd","cd","cb"};
-        bubbleSort2(ints);
     }
 
     public static String[] bubbleSort2(String[] ints) {
