@@ -1,6 +1,7 @@
 package com.huawei.sort;
 
 import com.huawei.link.DoubleLinkList;
+import org.junit.Test;
 
 /**
  * @Auther: likui
@@ -50,4 +51,5 @@ public class RadixSort {
         }
         return count;
     }
+
 }
