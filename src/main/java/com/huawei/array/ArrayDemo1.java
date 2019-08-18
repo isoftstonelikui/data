@@ -1,7 +1,5 @@
 package com.huawei.array;
 
-import org.junit.Test;
-
 /**
  * @Auther: likui
  * @Date: 2019/8/12 12:28
@@ -9,25 +7,8 @@ import org.junit.Test;
  */
 public class ArrayDemo1 {
 
-    @Test
-    public void deleteTest() {
-        String[] strings = new String[10];
-        strings[0] = "a";
-        strings[1] = "b";
-        strings[2] = "c";
-        strings[3] = "b";
-        strings[4] = "e";
-        String[] as = delete(strings, "b");
-    }
-
-    @Test
-    public void findTest() {
-        int[] ints = {1, 2, 5, 8, 10};
-        int i = find(ints, 5, 4);
-    }
-
     //删除数组中指定元素（所有都删除）
-    private static String[] delete(String[] strings, String string) {
+    public String[] delete(String[] strings, String string) {
         //校验string，规定非null
         if (string == null) {
             return strings;
@@ -53,7 +34,7 @@ public class ArrayDemo1 {
     }
 
     //有序数组的二分查找法
-    private int find(int[] ints, int nElements, int i) {
+    public int find(int[] ints, int nElements, int i) {
         int low = 0;
         int high = nElements - 1;
         int curIn = 0;

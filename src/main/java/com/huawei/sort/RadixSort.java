@@ -23,6 +23,7 @@ public class RadixSort {
                 digit = anIntDigit;
             }
         }
+
         for (int i = 1; i <= digit; i++) {
             //存入链表
             for (int anInt : ints) {
