@@ -10,7 +10,7 @@ import org.junit.Test;
 public class QueueTest {
     @Test
     public void demo1() {
-        PriorityQueue priorityQueue=new PriorityQueue(6);
+        PriorityQueueDemo priorityQueue=new PriorityQueueDemo(6);
         priorityQueue.add(1);
         priorityQueue.add(3);
         priorityQueue.add(5);

@@ -7,7 +7,7 @@ import com.huawei.stack.StackDemo;
  * @Date: 2019/8/18 09:45
  * @Description:
  */
-public class BinarySearchTree {
+public class BinarySearchTree implements Comparable {
     public Node root;
 
     //二叉搜索树的查找
@@ -209,11 +209,11 @@ public class BinarySearchTree {
         if (current == root) {
             root = successor;
             root.leftChild = current.leftChild;
-        } else if(parent.rightChild==current){
+        } else if (parent.rightChild == current) {
             parent.rightChild = successor;
             successor.leftChild = current.leftChild;
-        }else{
-            parent.leftChild=successor;
+        } else {
+            parent.leftChild = successor;
             successor.leftChild = current.leftChild;
         }
         return true;
@@ -279,4 +279,9 @@ public class BinarySearchTree {
         return false;
     }
 
+    public int compareTo(Object o) {
+        BinarySearchTree anotherTree = (BinarySearchTree) o;
+        int result = (Integer) root.iData - (Integer) anotherTree.root.iData;
+        return result;
+    }
 }
