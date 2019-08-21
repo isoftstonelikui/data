@@ -58,6 +58,11 @@ public class LinearHashTable {
         return null;
     }
 
+    /**
+     * 哈希函数
+     * @param key
+     * @return
+     */
     public int hashFun(int key) {
         return key % arraySize;
     }

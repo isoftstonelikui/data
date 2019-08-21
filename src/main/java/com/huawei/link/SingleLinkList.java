@@ -70,8 +70,8 @@ public class SingleLinkList {
     //删除指定节点
     public SingleLink delete(int data) {
         SingleLink current = first;
-        SingleLink previous = first;
-        while (current.iData != data) {
+        SingleLink previous = null;
+        while (current != null && current.iData != data) {
             if (current.next == null) {
                 throw new RuntimeException("不存在要删除的元素");
             } else {
@@ -80,10 +80,11 @@ public class SingleLinkList {
             }
         }
         //删除
-        if (current == first) {
-            first = current.next;
+        if (previous == null) {
+            first = first.next;
+        }else{
+            previous.next = current.next;
         }
-        previous.next = current.next;
         return current;
     }
 }
