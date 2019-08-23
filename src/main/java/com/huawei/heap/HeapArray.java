@@ -109,4 +109,13 @@ public class HeapArray {
         }
         return true;
     }
+
+    /**
+     * 显示堆数组内容
+     */
+    public void display() {
+        for (int i = 0; i < currentSize; i++) {
+            System.out.println(array[i].iData);
+        }
+    }
 }

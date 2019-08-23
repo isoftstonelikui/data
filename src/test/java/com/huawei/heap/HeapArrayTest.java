@@ -1,6 +1,5 @@
-package com.huawei.tree.binary;
+package com.huawei.heap;
 
-import com.huawei.heap.HeapArray;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -36,5 +35,10 @@ public class HeapArrayTest {
     @Test
     public void testModify() {
         heapArray.modify(1, 28);
+    }
+
+    @Test
+    public void testDisplay() {
+        heapArray.display();
     }
 }
